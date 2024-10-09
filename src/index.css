@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply bg-n-8 font-roboto
+    }
+    
+    .links {
+      @apply hidden xl:flex justify-between basis-[70%] items-center
+    }
+}
+
+.relative .container .relative span {
+  @apply z-10
+}
+
+.show {
+  @apply h-screen mt-[76.5px] block absolute top-0 left-0 w-screen bg-n-8
+}
+
+div.absolute.z-10:nth-child(3) {
+  @apply !translate-x-[300%]
+}
